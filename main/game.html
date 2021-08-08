@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="game.js" defer></script>
+
+    <style>
+        body{
+            margin: 8px;
+            background-color: black;
+            color: red;
+        }
+        button{
+            
+            margin: 8px;
+            background-color: darkred;
+            color: red;
+            border: 2px dotted red;
+            position:absolute;
+            bottom: 0;
+            right: 0%;
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .unseen{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="question1" class="question visible">
+        <h3>How old are you?</h3>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="answer1" value="false">
+            <label class="form-check-label" for="flexRadioDefault1">
+                10-20
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="answer2" value="false">
+            <label class="form-check-label" for="flexRadioDefault2">
+                20-30
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="answer3" value="true">
+            <label class="form-check-label" for="flexRadioDefault3">
+                Unknown 
+            </label>
+          </div>
+          Unknown right
+    </div>
+    
+    <div id="question2" class="question unseen">
+        <h3> What should be your opinion on yourself? </h3>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="false">
+            <label class="form-check-label" for="flexRadioDefault1">
+                I am cool
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="false">
+            <label class="form-check-label" for="flexRadioDefault2">
+                I am a looser
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="true">
+            <label class="form-check-label" for="flexRadioDefault3">
+                I am me.
+            </label>
+           
+          </div>
+       
+       , , I am me is right
+    </div>
+    
+    <div id="question3" class="question unseen">
+        <h3>Ya ever got a website from someone?</h3>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="false">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="false">
+            <label class="form-check-label" for="flexRadioDefault2">
+                No
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="true">
+            <label class="form-check-label" for="flexRadioDefault3">
+                Screw you
+            </label>
+          </div>
+         ,, . Screw you is right
+    </div>
+    
+    <button onclick="letsCheck()">Check Answer</button>
+</body>
+</html>
